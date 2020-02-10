@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dynamic</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body onload="DisplayPhoto();">
+		<div id="content" style="text-align:center">
+		<h1>This is a DYNAMIC PAGE</h1>
+		<h3>It demonstrates how Javascript can be used to change page content<br>
+		each time the page is loaded or in response to a user action.</h3>
+			<img id="photo" height="300" width="400" alt="eProf. S." 
+			onmouseover="HandleMouseOverEvent();" 
+			onmouseout="HandleMouseOutEvent();">
+			<h2>This is a photo of eProf. S. <span id="caption"> </span></h2>
+			<p><input type="button" value="Change Color" onclick="HandleClickEvent();"></p>
+		</div>
+  </body>
+</html>
