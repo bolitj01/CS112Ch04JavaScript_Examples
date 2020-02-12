@@ -5,10 +5,14 @@
   </head>
   <body>
     <div style="text-align:center">
-    <img src="https://cdn.glitch.com/53de8769-0e55-404c-aa80-0fa7904cfc5c%2Finternet-map.jpg?v=1581258245304"
-         height="250" width="430">
+    <img id="map" src="https://cdn.glitch.com/53de8769-0e55-404c-aa80-0fa7904cfc5c%2Finternet-map.jpg?v=1581258245304">
       <p>
-        <input type=
+        <input type="button" value="Make Larger"
+               onclick="document.getElementById('map').height='500';
+                        document.getElementById('map').width='860';"> 
+        <input type="button" value="Make Smaller"
+          onclick="document.getElementById('map').height='250';
+                   document.getElementById('map').width='430';">
       </p>
     </div>
   </body>
